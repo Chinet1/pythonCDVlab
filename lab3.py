@@ -1,6 +1,12 @@
-# ZAD 1
+# ZAD 4
 
-def isPalindrome(text):
-    return text == text[::-1]
+def avg(*args):
+    argsSum = 0
 
-print(isPalindrome(input("Wpisz tekst: ")))
+    for value in args:
+        argsSum += value
+
+    return argsSum / len(args)
+
+
+print(avg(2, 4, 5, 2, 5))
